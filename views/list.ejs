@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/main.css" rel="stylesheet">
+</head>
+<body>
+  <%- include('nav.ejs') %>
+  <h1>기능 선택</h1>
+  <div>
+      <!-- 회사 검색 버튼 -->
+      <button onclick="location.href='http://localhost:8080/company_info'">회사 검색</button>
+  </div>
+  <div>
+      <!-- 인력 검색 버튼 -->
+      <button onclick="location.href='http://localhost:8080/person_info'">인력 검색</button>
+  </div>
+  <div>
+      <!-- 회사 추가 버튼 -->
+      <button onclick="location.href='http://localhost:8080/company_write'">회사 추가</button>
+  </div>
+  <div>
+      <!-- 인력 추가 버튼 -->
+      <button onclick="location.href='http://localhost:8080/person_write'">인력 추가</button>
+  </div>
+  <div>
+      <!-- 인력의 근무일 추가 버튼 -->
+      <button onclick="location.href='http://localhost:8080/working'">인력의 근무일 추가</button>
+  </div>
+  <div>
+    <!-- 인력 삭제 버튼 -->
+    <button onclick="location.href='http://localhost:8080/delete_person'">인력 삭제</button>
+  </div>
+  <div>
+    <!-- 회사 삭제 버튼 -->
+    <button onclick="location.href='http://localhost:8080/delete_company'">회사 삭제</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/main.css" rel="stylesheet">
+</head>
+<body class="grey-bg">
+    <%- include('nav.ejs') %>
+
+    <form class="form-box" action="/add_company" method="POST">
+        <h4>회사명</h4>
+        <input name="회사명" required>
+        <h4>회사 고유 id</h4>
+        <input name="회사_고유_id" type="number" required>
+        <h4>위치</h4>
+        <select name="위치" required style="width: 150px;">
+            <option value="서울">서울</option>
+            <option value="경기">경기</option>
+            <option value="인천">인천</option>
+            <option value="부산">부산</option>
+            <option value="북한">북한</option>
+        </select>
+        <h4>일당</h4>
+        <input name="일당" type="number" required>
+        <button type="submit">전송</button>
+    </form> 
+
+</body>
+</html>
